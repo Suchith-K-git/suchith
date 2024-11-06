@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Details - Automated Web App Deployment</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        body {
+            background: linear-gradient(to bottom right, #007BFF, #00BFFF);
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            font-size: 16px;
+            line-height: 1.6;
+            justify-content: center;
+            align-items: center;
+        }
+
+        header {
+            width: 100%;
+            background: linear-gradient(to bottom right, rgba(0, 47, 108, 0.8), rgba(0, 191, 255, 0.8));
+            color: #fff;
+            padding: 20px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+        }
+
+        .logo {
+            background-color: #00BFFF;
+            border-radius: 50%;
+            width: 60px;
+            height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            color: #fff;
+            font-size: 1.5rem;
+        }
+
+        .nav-links a {
+            color: #fff;
+            text-decoration: none;
+            margin-left: 20px;
+            font-weight: 600;
+            transition: color 0.3s ease;
+        }
+
+        .nav-links a:hover {
+            color: #FFD700;
+        }
+
+        .project-container {
+            background: rgba(255, 255, 255, 0.9);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            padding: 20px;
+            max-width: 800px;
+            margin: 20px;
+            text-align: center;
+        }
+
+        .project-container img {
+            max-width: 100%;
+            border-radius: 10px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+            margin-bottom: 1rem;
+        }
+
+        footer {
+            background-color: #333;
+            color: #ffffff;
+            padding: 15px;
+            text-align: center;
+            font-size: 0.9rem;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="logo">SK</div>
+    <div class="nav-links">
+        <a href="index.html"><i class="fas fa-home"></i>Home</a>
+        <a href="project-details.html"><i class="fas fa-briefcase"></i>Projects</a>
+    </div>
+</header>
+
+<div class="project-container">
+    <h2>Automated Web App Deployment: Integrating Jenkins, GitHub, and Apache Tomcat on EC2</h2>
+    <img src="images/web-app-dep.jpg" alt="Automated Web App Deployment Diagram">
+    <p>This project involves setting up an automated deployment pipeline using Jenkins, GitHub, Maven, and Apache Tomcat on an EC2 instance. The setup allows for seamless code updates and application deployments.</p>
+    <p>The workflow begins with a developer pushing code to GitHub, which Jenkins then pulls and builds using Maven. The resulting WAR file is deployed to Tomcat on an EC2 instance, where users can access the web application.</p>
+</div>
+
+<footer>
+    Suchith K © 2024. All rights reserved.
+</footer>
+
+</body>
+</html>
