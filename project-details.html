@@ -35,17 +35,10 @@
             box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
         }
 
-        .logo {
-            background-color: #00BFFF;
-            border-radius: 50%;
+        .logo img {
             width: 60px;
             height: 60px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-weight: bold;
-            color: #fff;
-            font-size: 1.5rem;
+            border-radius: 50%;
         }
 
         .nav-links a {
@@ -90,10 +83,12 @@
 <body>
 
 <header>
-    <div class="logo">SK</div>
+    <div class="logo">
+        <img src="images/logo.webp" alt="Logo">
+    </div>
     <div class="nav-links">
-        <a href="index.html"><i class="fas fa-home"></i>Home</a>
-        <a href="project-details.html"><i class="fas fa-briefcase"></i>Projects</a>
+        <a href="index.html"><i class="fas fa-home"></i> Home</a>
+        <a href="project-details.html"><i class="fas fa-briefcase"></i> Projects</a>
     </div>
 </header>
 
