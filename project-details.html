@@ -20,8 +20,8 @@
             flex-direction: column;
             font-size: 16px;
             line-height: 1.6;
-            justify-content: center;
             align-items: center;
+            padding-top: 100px; /* Adjusted to avoid content being hidden under fixed header */
         }
 
         header {
@@ -33,6 +33,10 @@
             justify-content: space-between;
             align-items: center;
             box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            position: fixed;
+            top: 0;
+            z-index: 1000;
+            width: 100%;
         }
 
         .logo img {

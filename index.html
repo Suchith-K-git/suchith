@@ -11,6 +11,7 @@
             padding: 0;
             box-sizing: border-box;
             font-family: 'Roboto', sans-serif;
+            scroll-behavior: smooth;
         }
 
         body {
@@ -20,6 +21,7 @@
             display: flex;
             flex-direction: column;
             font-size: 16px;
+            transition: all 0.3s ease-in-out;
         }
 
         header {
@@ -30,20 +32,24 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+            position: fixed;
+            top: 0;
+            z-index: 1000;
+            width: 100%;
         }
 
         .logo {
-            border-radius: 50%;
             width: 60px;
             height: 60px;
-            overflow: hidden; /* Ensures circular shape */
         }
 
         .logo img {
             width: 100%;
             height: 100%;
-            object-fit: cover; /* Ensures the image fills the circle */
+            object-fit: cover;
+            border-radius: 50%;
+            box-shadow: 0 4px 8px rgba(255, 255, 255, 0.4);
         }
 
         .nav-links a {
@@ -51,7 +57,7 @@
             text-decoration: none;
             margin-left: 20px;
             font-weight: 600;
-            transition: color 0.3s ease;
+            transition: color 0.3s ease, transform 0.3s;
         }
 
         .nav-links a i {
@@ -60,15 +66,29 @@
 
         .nav-links a:hover {
             color: #FFD700;
+            transform: scale(1.1);
+        }
+
+        .container {
+            margin-top: 100px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 0 20px;
         }
 
         section {
-            margin: 20px;
-            padding: 20px;
+            margin: 40px 0;
+            padding: 30px;
             background: rgba(255, 255, 255, 0.9);
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            border-radius: 15px;
             text-align: center;
+            transition: transform 0.3s;
+        }
+
+        section:hover {
+            transform: translateY(-5px);
         }
 
         .about img {
@@ -77,6 +97,11 @@
             border-radius: 50%;
             box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
             margin-bottom: 1rem;
+            transition: box-shadow 0.3s ease;
+        }
+
+        .about img:hover {
+            box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.4);
         }
 
         .skills-list span {
@@ -86,27 +111,46 @@
             border-radius: 20px;
             margin: 5px;
             display: inline-block;
-            transition: transform 0.3s;
+            transition: transform 0.3s ease, background-color 0.3s ease;
         }
 
         .skills-list span:hover {
             transform: scale(1.1);
+            background-color: #0056B3;
+        }
+
+        .professional-network a {
+            color: #007BFF;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        .professional-network a:hover {
+            color: #0056B3;
         }
 
         footer {
             background-color: #333;
             color: #ffffff;
-            padding: 15px;
+            padding: 20px;
             text-align: center;
             font-size: 0.9rem;
-            margin-top: 20px;
+            margin-top: 40px;
             width: 100%;
+            border-top: 4px solid #007BFF;
         }
 
-        .container {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
+        footer a {
+            color: #FFD700;
+            text-decoration: none;
+            margin-left: 10px;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        footer a:hover {
+            color: #fff;
         }
     </style>
 </head>
@@ -141,6 +185,8 @@
                 <span>Ansible</span>
                 <span>Linux</span>
                 <span>Git & GitHub</span>
+                <span>Java</span>
+                <span>c#</span>
                 <span>HTML</span>
                 <span>CSS</span>
                 <span>JavaScript</span>
@@ -149,14 +195,17 @@
 
         <div class="professional-network">
             <h2>Professional Network</h2>
-            <p>LinkedIn: <a href="https://www.linkedin.com/in/suchithk/" target="_blank">Suchith K</a></p>
+            <p>LinkedIn: <a href="https://www.linkedin.com/in/suchith-k-0262a5252/" target="_blank">Suchith K</a></p>
             <p>GitHub: <a href="https://github.com/Suchith-K-git" target="_blank">Suchith-K-git</a></p>
         </div>
     </section>
 </div>
 
 <footer>
-    Suchith K © 2024. All rights reserved.
+    <p>Suchith K © 2024. All rights reserved. | Connect with me on
+        <a href="https://www.linkedin.com/in/suchith-k-0262a5252/" target="_blank"><i class="fab fa-linkedin"></i></a>
+        <a href="https://github.com/Suchith-K-git" target="_blank"><i class="fab fa-github"></i></a>
+    </p>
 </footer>
 
 </body>
