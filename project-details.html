@@ -21,7 +21,7 @@
             font-size: 16px;
             line-height: 1.6;
             align-items: center;
-            padding-top: 100px; /* Adjusted to avoid content being hidden under fixed header */
+            padding-top: 160px; /* Adjusted to avoid content being hidden under fixed header */
         }
 
         header {
@@ -64,7 +64,7 @@
             padding: 20px;
             max-width: 800px;
             margin: 20px;
-            text-align: center;
+            text-align: left;
         }
 
         .project-container img {
@@ -82,6 +82,11 @@
             font-size: 0.9rem;
             width: 100%;
         }
+
+        ul {
+            list-style-type: disc;
+            margin-left: 20px;
+        }
     </style>
 </head>
 <body>
@@ -97,10 +102,26 @@
 </header>
 
 <div class="project-container">
-    <h2>Automated Web App Deployment: Integrating Jenkins, GitHub, and Apache Tomcat on EC2</h2>
+    <h2>Project 1: Automated Web App Deployment Using Jenkins Freestyle Project with GitHub, Maven, Tomcat, and AWS EC2</h2>
     <img src="images/web-app-dep.jpg" alt="Automated Web App Deployment Diagram">
-    <p>This project involves setting up an automated deployment pipeline using Jenkins, GitHub, Maven, and Apache Tomcat on an EC2 instance. The setup allows for seamless code updates and application deployments.</p>
-    <p>The workflow begins with a developer pushing code to GitHub, which Jenkins then pulls and builds using Maven. The resulting WAR file is deployed to Tomcat on an EC2 instance, where users can access the web application.</p>
+    <ul>
+        <li><strong>Version control</strong>: GitHub for source code management and version control</li>
+        <li><strong>Build</strong>: Maven for compiling, testing, and packaging Java applications</li>
+        <li><strong>CI/CD Pipeline</strong>: Jenkins Freestyle Project for building, testing, and deploying the application</li>
+        <li><strong>Deployment</strong>: Apache Tomcat server hosted on an AWS EC2 instance</li>
+    </ul>
+</div>
+
+<div class="project-container">
+    <h2>Project 2: Automated Web App Deployment Using Jenkins Freestyle Project with GitHub, Maven, Ansible, Tomcat, and AWS EC2</h2>
+    <img src="images/ansible.jpg" alt="Ansible Deployment Architecture">
+    <ul>
+        <li><strong>Version control</strong>: GitHub for source code management and version control</li>
+        <li><strong>Build</strong>: Maven for compiling, testing, and packaging Java applications</li>
+        <li><strong>CI/CD Pipeline</strong>: Jenkins Freestyle Project for building, testing, and deploying the application</li>
+        <li><strong>Configuration Management</strong>: Ansible for automating deployment and configuration on the EC2 instance</li>
+        <li><strong>Deployment</strong>: Apache Tomcat server hosted on an AWS EC2 instance</li>
+    </ul>
 </div>
 
 <footer>
